@@ -18,8 +18,10 @@ Esse labore voluptate [nam dolorum veniam](#) numquam et reiciendis qui itaque v
 ### This is a sub-heading
 
 ~~~~~
-Aut ea rem repudiandae tempore perferendis. consequuntur doloribus tempora cupiditate commodi similique doloremque porro labore deleniti. magni est minus atque accusantium dicta consequatur praesentium qui quia non. eum possimus placeat facilis aut qui architecto qui et autem voluptas excepturi nemo. consequatur possimus a accusamus sit consequatur aspernatur aut totam. laudantium odit a praesentium laborum magni autem facere quidem aperiam commodi est. dolore debitis doloremque ea impedit
-
+index=foo
+| stats count by bar
+| sort -count
+| where count = 34
 ~~~~~
 
 * Tempora commodi quia deserunt porro excepturi
