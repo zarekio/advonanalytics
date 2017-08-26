@@ -1,11 +1,11 @@
 - name: Home
   path: index.html
   section_id: home
-  children:
-    - name: Home default
-      path: index.html
-    - name: Home alternative
-      path: index-alternative.html
+#  children:
+#    - name: Home default
+#      path: index.html
+#    - name: Home alternative
+#      path: index-alternative.html
 - name: Services
   path: services.html
   section_id: services
