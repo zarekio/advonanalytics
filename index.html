@@ -154,33 +154,6 @@ members:
 
 {% include whys.html %}
 
-<div class='full'>
-  <div class='row'>
-    <div class='special-title centered-text'>
-      <i class='icon-star'></i>
-      <h2>Portfolio</h2>
-      <p>Our best and featured works so far</p>
-      <p class='shortline'></p>
-    </div>
-  </div>
-</div>
-
-<ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4'>
-  {% for work in page.works %}
-    <li>
-      <a>
-        <img src='{{site.url}}/images/{{ work.image }}'>
-        <div class='overlay'>
-          <div class='thumb-info'>
-            <h3>{{ work.title }}</h3>
-            <p>{{ work.category }}</p>
-          </div>
-        </div>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
-
 <div class='full white'>
   <div class='row'>
     <div class='special-title centered-text'>
