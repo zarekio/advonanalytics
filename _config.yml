@@ -15,3 +15,5 @@ blog_url: "blog"
 
 # Build settings
 markdown: kramdown
+
+permalink: /blog/:year/:month/:day/:title
