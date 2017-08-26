@@ -1,5 +1,5 @@
 name: squarebox
-markdown: redcarpet
+markdown: kramdown
 pygments: false
 excerpt_separator: <!--more-->
 paginate: 3
