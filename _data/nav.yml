@@ -12,14 +12,14 @@
 - name: About
   path: about.html
   section_id: about
-- name: Portfolio
-  path: portfolio.html
-  section_id: portfolio
-  children:
-    - name: Portfolio
-      path: portfolio.html
-    - name: Portfolio single
-      path: portfolio-item.html
+#- name: Portfolio
+#  path: portfolio.html
+#  section_id: portfolio
+#  children:
+#    - name: Portfolio
+#      path: portfolio.html
+#    - name: Portfolio single
+#      path: portfolio-item.html
 - name: Blog
   path: blog/
   section_id: blog
