@@ -11,7 +11,7 @@ url: "http://advonanalytics.com" # the base hostname & protocol for your site
 #twitter_username: volnyio
 #github_username:  volny
 
-blog_url: http://reddit.com
+blog_url: "/blog"
 
 # Build settings
 markdown: kramdown
