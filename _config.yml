@@ -1,6 +1,6 @@
 name: squarebox
 markdown: redcarpet
-pygments: true
+pygments: false
 excerpt_separator: <!--more-->
 paginate: 3
 paginate_path: "blog/page:num"
