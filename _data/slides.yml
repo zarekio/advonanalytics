@@ -2,16 +2,16 @@
   desc_location: left
   desc:
     <h2>Welcome to Advon</h2>
-    <p>------------------</p>
-    <div class='two spacing'></div>
-    <a class='button boxed'>View Features</a>
-- image: slide-2.jpg
-  desc_location: right
-  desc:
-    <h2>Creative Design</h2>
-    <p>Focus on every detail element.</p>
-    <div class='two spacing'></div>
-    <a class='button boxed'>Learn More</a>
+#    <p>------------------</p>
+#    <div class='two spacing'></div>
+#    <a class='button boxed'>View Features</a>
+#- image: slide-2.jpg
+#  desc_location: right
+#  desc:
+#    <h2>Creative Design</h2>
+#    <p>Focus on every detail element.</p>
+#    <div class='two spacing'></div>
+#    <a class='button boxed'>Learn More</a>
 #- image: slide-3.jpg
 #  desc_location: left
 #  desc:
