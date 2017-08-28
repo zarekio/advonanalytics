@@ -23,3 +23,6 @@
 - name: Blog
   path: blog/
   section_id: blog
+- name: Contact Us
+  path: '#contact_us'
+  section_id: contact_us
