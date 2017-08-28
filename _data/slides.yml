@@ -1,7 +1,7 @@
 - image: header_1600x400.jpg
   desc_location: left
   desc:
-    <h2>Welcome to Advon</h2>
+#    <h2>Welcome to Advon</h2>
 - image: bg-6.jpg
   desc_location: right
   desc:
