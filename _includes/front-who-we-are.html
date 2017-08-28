@@ -1,0 +1,34 @@
+<div class='full light-yellow'>
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <i class='icon-users'></i>
+      <h2>Who we are</h2>
+      <p>We are happy to know you are happy</p>
+      <p class='shortline'></p>
+    </div>
+    <div class='spacing'></div>
+    <div class='spacing'></div>
+  </div>
+  <div class='row'>
+    <div class='medium-6 large-6 columns'>
+      <p>
+        <span class='drop-letters'>We</span>
+        are est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae. Nihil quia et omnis blanditiis eius suscipit quos. Est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae.
+      </p>
+      <p>Est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae. Nihil quia et omnis blanditiis eius suscipit quos. Nihil quia et omnis blanditiis eius suscipit quos.</p>
+    </div>
+    <div class='medium-6 large-6 columns'>
+      <ul class='bars'>
+        {% for bar in page.bars %}
+          <li>
+            <h4>
+              {{bar.title}}
+              <strong>{{bar.percent}}%</strong>
+            </h4>
+            <p class='highlighted' data-percent='{{bar.percent}}'></p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

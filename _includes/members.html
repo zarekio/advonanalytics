@@ -1,0 +1,47 @@
+<div class='members'>
+  <div class='full light-yellow no-padding'>
+    <div class='row'>
+      {% for member in page.members %}
+        {% if forloop.first %}
+          {% assign active_class = "active" %}
+        {% else %}
+          {% assign active_class = "" %}
+        {% endif %}
+        <div class='medium-3 large-3 columns'>
+          <div class='member centered-text {{active_class}}' data-target='#member-{{forloop.index}}'>
+            <img src='{{site.url}}/images/{{member.image}}'>
+            <h3>{{member.name}}</h3>
+            <p class='position'>{{member.position}}</p>
+            <p class='active-line'></p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='full white'>
+    <div class='row'>
+      {% for member in page.members %}
+        {% if forloop.first %}
+          {% assign active_class = "active" %}
+        {% else %}
+          {% assign active_class = "" %}
+        {% endif %}
+        <div class='member-intro {{active_class}}' id='member-{{forloop.index}}'>
+          <div class='medium-8 large-8 columns'>
+            <p>{{member.desc}}</p>
+          </div>
+          <div class='medium-4 large-4 columns'>
+            <div class='socials'>
+              {% for social in member.socials %}
+                <a href='{{social.link}}'>
+                  <i class='icon-{{social.name}} {{social.color}}'></i>
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
