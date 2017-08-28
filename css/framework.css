@@ -1,6 +1,10 @@
 :target:before {
+  content:"";
+  display:block;
+  height:100px;
   margin:-100px 0 0;
 }
+
 meta.foundation-version {
   font-family: "/5.2.2/";
 }
