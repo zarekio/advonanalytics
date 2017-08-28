@@ -7,7 +7,7 @@
   desc:
     <h1>Welcome to Advon another slide</h1>
     <div class='two spacing'></div>
-    <a class='button boxed' type='button' onclick="alert('Hello world!')>Learn More</a>
+    <a class='button boxed'>Learn More</a>
 #    <p>------------------</p>
 #    <div class='two spacing'></div>
 #    <a class='button boxed'>View Features</a>
