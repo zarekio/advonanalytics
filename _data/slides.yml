@@ -2,6 +2,10 @@
   desc_location: left
   desc:
     <h2>Welcome to Advon</h2>
+- image: header_1600x530.jpg
+  desc_location: left
+  desc:
+    <h2>Welcome to Advon</h2>
 #    <p>------------------</p>
 #    <div class='two spacing'></div>
 #    <a class='button boxed'>View Features</a>
