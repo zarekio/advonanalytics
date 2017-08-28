@@ -7,7 +7,7 @@
 #    - name: Home alternative
 #      path: index-alternative.html
 - name: Services
-  path: services.html
+  path: \#services
   section_id: services
 - name: About
   path: about.html

@@ -1,16 +1,20 @@
-- title: Creative designs
-  icon: signal
-  desc:
-    Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
-- title: Responsive layout
+- title: Splunk> focused
   icon: cog
   desc:
     Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
-- title: Easy to customize
-  icon: paper-plane
+- title: Industry certified
+  icon: graduation-cap
   desc:
     Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
-- title: Great support
+- title: Solve problems
+  icon: lamp
+  desc:
+    Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
+- title: Fanatical support
+  icon: chat
+  desc:
+    Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
+- title: Fanatical support
   icon: chat
   desc:
     Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
