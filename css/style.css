@@ -175,6 +175,7 @@ p.medline {
   height: 1px;
   margin: 0 auto;
   border-bottom: 1px solid #dd550d;
+  background-color: white;
 }
 
 /*icon-text */
