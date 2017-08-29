@@ -3,9 +3,9 @@
   desc:
     <h2>Welcome to Advon Analytics</h2>
 - image: washington_dc_1600x400.jpg
-  desc_location: left
+  desc_location: right
   desc:
-    <h1>Welcome to Advon another slide</h1>
+    <h2>Splunk> .conf2017</h2>
     <div class='spacing'></div>
     <a target='_blank' class='button boxed' href='/services.html'>Learn More</a>
 #    <p>------------------</p>
