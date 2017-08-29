@@ -4,4 +4,4 @@ pygments: false
 excerpt_separator: <!--more-->
 paginate: 3
 paginate_path: "blog/page:num"
-permalink: pretty
+permalink: /blog/:pretty
