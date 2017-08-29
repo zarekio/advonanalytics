@@ -1,13 +1,13 @@
 - image: header_1600x400.jpg
   desc_location: left
   desc:
-#    <h2>Welcome to Advon</h2>
+    <h2>Welcome to Advon Analytics</h2>
 - image: bg-6.jpg
   desc_location: right
   desc:
     <h1>Welcome to Advon another slide</h1>
     <div class='two spacing'></div>
-    <a class='button boxed' href='/services.html'>Learn More</a>
+    <a target='_blank' class='button boxed' href='/services.html'>Learn More</a>
 #    <p>------------------</p>
 #    <div class='two spacing'></div>
 #    <a class='button boxed'>View Features</a>
