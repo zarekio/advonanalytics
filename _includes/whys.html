@@ -7,17 +7,13 @@
   </div>
   <div class='two spacing'></div>
   <div class='row'>
-    {% for why in site.data.whys %}
-      {% if include.shape %}
-        {% assign shape = include.shape %}
-      {% else %}
-        {% assign shape = "boxed" %}
-      {% endif %}
-      <div class='medium-3 large-3 columns icon-text-{{shape}}'>
-        <i class='icon-{{ why.icon }}'></i>
-        <h3>{{ why.title }}</h3>
-        <p>{{ why.desc }}</p>
-      </div>
+    {% for why in site.data.whys %} {% if include.shape %} {% assign shape = include.shape %} {% else %} {% assign shape = "boxed" %} {% endif %}
+    <div class='medium-3 large-3 columns icon-text-{{shape}}'>
+      <i class='icon-{{ why.icon }}'></i>
+      <h3>{{ why.title }}</h3>
+      <p>{{ why.desc }}</p>
+    </div>
     {% endfor %}
   </div>
+  <p class="medline"></p>
 </div>
