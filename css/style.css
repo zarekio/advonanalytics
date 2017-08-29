@@ -169,13 +169,11 @@ h1, h2, h3, h4 {
   margin: 0 auto;
   border-bottom: 1px solid #dd550d;
 }
-
-p.medline {
+.special-title p.medline {
   width: 300px;
-  height: 1px;
+  height: 5px;
   margin: 0 auto;
   border-bottom: 1px solid #dd550d;
-  background-color: white;
 }
 
 /*icon-text */
