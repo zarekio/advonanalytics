@@ -2,10 +2,6 @@
 layout: blog
 section_id: blog
 ---
-
-{{page.categories}}
-
-
 <div class='post'>
   <div class='timestamp left text-center'>
     <span class='month'>{{ page.date | date: "%h" }}</span>
@@ -16,8 +12,8 @@ section_id: blog
       <a href='{{page.url}}'>{{ page.title }}</a>
     </h3>
     <p>
-      By
-      <span class='author'>{{ page.author }}</span>
+      By:
+      <span class='author'>{{ page.author }} | Categories: {{page.categories}}</span>
     </p>
   </div>
   <div class='content'>
