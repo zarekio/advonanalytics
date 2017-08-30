@@ -24,5 +24,5 @@
   path: blog/
   section_id: blog
 - name: Contact Us
-  path: conctact.html
+  path: contact.html
   section_id: contact_us
