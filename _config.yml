@@ -5,3 +5,8 @@ excerpt_separator: <!--more-->
 paginate: 3
 paginate_path: "blog/page:num"
 permalink: /blog/:year/:month/:day/:title.html
+url: http://127.0.0.1
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
