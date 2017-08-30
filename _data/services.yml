@@ -1,0 +1,22 @@
+-
+  - title: Splunk> Professional Services
+    icon: chart-line
+    desc:
+      Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+    color: red
+  - title: Splunk> Traning
+    icon: graduation-cap
+    desc:
+      Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+    color:
+  - title: Custom Splunk> App Development
+    icon: rocket
+    desc:
+      Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+    color:
+-
+  - title: Splunk> Enterprise Security
+    icon: lock
+    desc:
+      Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+    color: yellow
