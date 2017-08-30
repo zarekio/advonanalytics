@@ -6,7 +6,7 @@ author: jd
 categories: "splunk windows iis sql sqli injection search"
 ---
 
-![sql-injection-example-2016-h8oapmul](H:\Desktop\sql-injection-example-2016-h8oapmul.jpg)
+![sql-injection](/images/sql-injection.jpg)
 
 I'll be the first to admit that i don't like Windows or anything to do with SQL. Fortunately, that does not exempt me from having to build use cases and Splunk searches for my "customers". It's fortunate because there is no progress in the comfort zone. Outside of your standard means of mitigating SQLi attacks, such as, using stored procedures, input sanitation, etc. I don't know much else about SQLi attacks. 
 
