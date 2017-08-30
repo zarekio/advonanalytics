@@ -7,7 +7,7 @@
 #    - name: Home alternative
 #      path: index-alternative.html
 - name: Services
-  path: '#services'
+  path: services.html
   section_id: services
 - name: About
   path: about.html
@@ -24,5 +24,5 @@
   path: blog/
   section_id: blog
 - name: Contact Us
-  path: '#contact_us'
+  path: conctact.html
   section_id: contact_us
