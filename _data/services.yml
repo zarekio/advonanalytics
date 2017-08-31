@@ -2,21 +2,21 @@
   - title: Splunk> Professional Services
     icon: chart-line
     desc:
-      Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      Have a growing project, an expanding environment, or just getting started with Splunk? We know Splunk, and we know our success is directly proportional to yours. Our goal is to become the successful Splunk consultancy possible.
     color: red
   - title: Splunk> Traning
     icon: graduation-cap
     desc:
-      Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      Like Big Data, Splunk is a big platform and it demands big training. Advon offers a suite of custom training programs and bootcamps to cover your business' needs.
     color:
   - title: Custom Splunk> App Development
     icon: rocket
     desc:
-      Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      Splunkbase isn't the only place to find great applications. Let Advon help develop your next internal project. We can do that!
     color:
 -
   - title: Splunk> Enterprise Security
     icon: lock
     desc:
-      Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      Whether your company is a Splunk veteran or still wondering what the "punct" field is, help with deploying Splunk Enterprise Security is closer than you think. Achieve the lowest time-to-value possible without sacrificing quality.
     color: yellow
