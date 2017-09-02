@@ -16,12 +16,13 @@ Proxy or not, if the thought of allowing Splunk to reach the internet gives you 
 
 Restart Splunk but don't blink. You might miss it.
 
-Below are some screenshots of the before and after:
 ### Before:
 ![](/images/Screen%20Shot%202017-09-02%20at%202.21.46%20PM.png)
+
 ![](/images/Screen%20Shot%202017-09-02%20at%202.22.00%20PM.png)
 
 ### After:
 
 ![](/images/Screen%20Shot%202017-09-02%20at%202.22.16%20PM.png)
+
 ![](/images/Screen%20Shot%202017-09-02%20at%202.23.09%20PM.png)
