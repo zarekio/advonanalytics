@@ -3,7 +3,7 @@ layout: post
 title: "Fixing Splunk When it Takes Forever to Restart"
 date: 2017-09-02 14:53:00 CST
 author: jd
-categories: [splunk, restart, troubleshooting, configuration]
+categories: [splunk restart troubleshooting configuration]
 published: true
 ---
 ![splunkd restart taking forever](/images/Screen%20Shot%202017-09-02%20at%202.21.46%20PM.png)

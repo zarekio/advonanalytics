@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Hunting for SQL Injection (SQLi) attacks in Windows IIS Logs"
-date:   2017-08-30 11:13:00 CST
+date: 2017-08-30 11:13:00 CST
 author: jd
 categories: [splunk windows iis sql sqli injection search]
+published: true
 ---
 
 ![sql-injection](/images/sql-injection.jpg)
