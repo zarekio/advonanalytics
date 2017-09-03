@@ -3,10 +3,11 @@ layout: post
 title: "Fixing Splunk When it Takes Forever to Restart"
 date: 2017-09-02 14:53:00 CST
 author: jd
-categories: splunk restart troubleshooting configuration
+categories: [splunk, restart, troubleshooting, configuration]
 published: true
 ---
-![Splunk restart taking forever](/images/Screen%20Shot%202017-09-02%20at%202.21.46%20PM.png)
+![splunkd restart taking forever](/images/Screen%20Shot%202017-09-02%20at%202.21.46%20PM.png)
+![splunkweb taking forever to start](/images/Screen%20Shot%202017-09-02%20at%202.22.00%20PM.png)
 
 Are you running a version of Splunk Enterprise prior to 6.6.3 and the restarts are taking forever? I feel your pain. If I wasn't at work, I'd probably take a nap while waiting for the services to come back up.
 
