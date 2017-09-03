@@ -3,12 +3,12 @@ layout: post
 title:  "Hunting for SQL Injection (SQLi) attacks in Windows IIS Logs"
 date:   2017-08-30 11:13:00 CST
 author: jd
-categories: "splunk windows iis sql sqli injection search"
+categories: [splunk windows iis sql sqli injection search]
 ---
 
 ![sql-injection](/images/sql-injection.jpg)
 
-I'll be the first to admit that i don't like Windows or anything to do with SQL. Fortunately, that does not exempt me from having to build use cases and Splunk searches for my "customers". It's fortunate because there is no progress in the comfort zone. Outside of your standard means of mitigating SQLi attacks, such as, using stored procedures, input sanitation, etc. I don't know much else about SQLi attacks. 
+I'll be the first to admit that i don't like Windows or anything to do with SQL. Fortunately, that does not exempt me from having to build use cases and Splunk searches for my "customers". It's fortunate because there is no progress in the comfort zone. Outside of your standard means of mitigating SQLi attacks, such as, using stored procedures, input sanitation, etc. I don't know much else about SQLi attacks.
 
 <!--more-->
 
@@ -58,15 +58,15 @@ So, while working on an SQL Injection (SQLi) use case, one of the guys said ther
 </requestFiltering>
 ```
 
-Armed with some new found knowledge, I came up with a quick search that will identify the `cs_uri_query` that contain the strings Microsoft believes should be filtered out. 
+Armed with some new found knowledge, I came up with a quick search that will identify the `cs_uri_query` that contain the strings Microsoft believes should be filtered out.
 
 I believe the search can and should be tuned up a bit but amid the false positives, we've seen some very interesting queries logged. Below you'll find the search I'm currently using:
 
 ```
 <SPL input for your iis logs>
-| regex cs_uri_query="(?i)(?:--|\;|\/\*|\@|\@\@version|char|alter|begin|cast|create|cursor|declare|delete|drop|end|exec|fetch|insert|kill|open|select|sys|table|update)" 
+| regex cs_uri_query="(?i)(?:--|\;|\/\*|\@|\@\@version|char|alter|begin|cast|create|cursor|declare|delete|drop|end|exec|fetch|insert|kill|open|select|sys|table|update)"
 | stats count by host c_ip cs_uri_stem cs_uri_query
-| rex field=cs_uri_query "(?i)(?<suspect>--|\;|\/\*|\@|\@\@version|char|alter|begin|cast|create|cursor|declare|delete|drop|end|exec|fetch|insert|kill|open|select|sys|table|update)" max_match=0 
+| rex field=cs_uri_query "(?i)(?<suspect>--|\;|\/\*|\@|\@\@version|char|alter|begin|cast|create|cursor|declare|delete|drop|end|exec|fetch|insert|kill|open|select|sys|table|update)" max_match=0
 ```
 
 NOTE: The commenting I use below is not supported in SPL, however, it is quicker for me to write. Please please base your search on the SPL above.
@@ -76,7 +76,7 @@ NOTE: The commenting I use below is not supported in SPL, however, it is quicker
 <SPL input for your iis logs
 
 # Returns events where "cs_uri_query" matches any of the strings based on list above. The regex matches in a case-insensitive manner.
-| regex cs_uri_query="(?i)(?:--|\;|\/*|\@|\@\@version|char|alter|begin|cast|create|cursor|declare|delete|drop|end|exec|fetch|insert|kill|open|select|sys|table|update)" 
+| regex cs_uri_query="(?i)(?:--|\;|\/*|\@|\@\@version|char|alter|begin|cast|create|cursor|declare|delete|drop|end|exec|fetch|insert|kill|open|select|sys|table|update)"
 
 # Aggregate results and return back the limited data set to the Search Head.
 | stats count by host c_ip cs_uri_stem cs_uri_query
