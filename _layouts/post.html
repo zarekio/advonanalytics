@@ -1,6 +1,7 @@
 ---
 layout: blog
 section_id: blog
+comments: true
 ---
 <div class='post'>
   <div class='timestamp left text-center'>
@@ -19,4 +20,5 @@ section_id: blog
   <div class='content'>
     {{ content }}
   </div>
+  {% include disqus.html %}
 </div>
