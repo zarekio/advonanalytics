@@ -5,6 +5,7 @@ date: 2017-08-30 11:13:00 CST
 author: jd
 categories: [splunk windows iis sql sqli injection search]
 published: true
+comments: true
 ---
 
 ![sql-injection](/images/sql-injection.jpg)
