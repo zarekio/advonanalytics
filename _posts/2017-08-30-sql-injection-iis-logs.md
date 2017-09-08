@@ -16,8 +16,6 @@ I'll be the first to admit that i don't like Windows or anything to do with SQL.
 
 So, while working on an SQL Injection (SQLi) use case, one of the guys said there are "filtering rules" that are used to restrict what input can be passed to the database from the web front end. Okay, good to know! According to the Microsoft [docs](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/requestfiltering/filteringrules/)  those terms, in XML format, are:
 
-> :white_check_mark: **Tip:** To allow other people to use the lookup file, you will need to edit the permission to make it shared in App.
-
 ```xml
 <requestFiltering>
    <filteringRules>

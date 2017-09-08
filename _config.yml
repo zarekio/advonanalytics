@@ -5,7 +5,8 @@ excerpt_separator: <!--more-->
 paginate: 3
 paginate_path: "blog/page:num"
 permalink: /blog/:year/:month/:day/:title.html
-url: http://advonanalytics.com
+url: https://advonanalytics.com
+enforce_ssl: advonanalytics.com
 
 plugins:
   - jekyll-seo-tag
