@@ -1,6 +1,6 @@
 name: Advon Analytics
 markdown: kramdown
-pygments: false
+highlighter: pygments
 excerpt_separator: <!--more-->
 paginate: 3
 paginate_path: "blog/page:num"
