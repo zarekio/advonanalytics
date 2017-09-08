@@ -16,7 +16,9 @@ I'll be the first to admit that i don't like Windows or anything to do with SQL.
 
 So, while working on an SQL Injection (SQLi) use case, one of the guys said there are "filtering rules" that are used to restrict what input can be passed to the database from the web front end. Okay, good to know! According to the Microsoft [docs](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/requestfiltering/filteringrules/)  those terms, in XML format, are:
 
-{% highlight xml %}
+> :white_check_mark: **Tip:** To allow other people to use the lookup file, you will need to edit the permission to make it shared in App.
+
+```xml
 <requestFiltering>
    <filteringRules>
       <filteringRule name="SQLInjection" scanUrl="false" scanQueryString="true">
@@ -58,20 +60,20 @@ So, while working on an SQL Injection (SQLi) use case, one of the guys said ther
       </filteringRule>
    </filteringRules>
 </requestFiltering>
-{% endhighlight %}
+```
 
 Armed with some new found knowledge, I came up with a quick search that will identify the `cs_uri_query` that contain the strings Microsoft believes should be filtered out.
 
 I believe the search can and should be tuned up a bit but amid the false positives, we've seen some very interesting queries logged. Below you'll find the search I'm currently using:
 
-{% highlight plaintext %}
+```
 <SPL input for your iis logs>
 | regex cs_uri_query="(?i)(?:--|\;|\/\*|\@|\@\@version|char|alter|begin|cast|create|cursor|declare|delete|drop|end|exec|fetch|insert|kill|open|select|sys|table|update)"
 | stats count by host c_ip cs_uri_stem cs_uri_query
 | rex field=cs_uri_query "(?i)(?<suspect>--|\;|\/\*|\@|\@\@version|char|alter|begin|cast|create|cursor|declare|delete|drop|end|exec|fetch|insert|kill|open|select|sys|table|update)" max_match=0
-{% endhighlight %}
+```
 
-NOTE: The commenting I use below is not supported in SPL, however, it is quicker for me to write. Please please base your search on the SPL above.
+NOTE: The commenting I use below is not supported in SPL, however, it is quicker for me to write. Please base your search on the SPL above.
 
 ```
 # SPL required to search for IIS logs
