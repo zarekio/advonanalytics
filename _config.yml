@@ -8,6 +8,6 @@ permalink: /blog/:year/:month/:day/:title.html
 url: https://advonanalytics.com
 enforce_ssl: advonanalytics.com
 
-plugins:
+plugins_dir:
   - jekyll-seo-tag
   - jekyll-sitemap
