@@ -64,12 +64,12 @@ Armed with some new found knowledge, I came up with a quick search that will ide
 
 I believe the search can and should be tuned up a bit but amid the false positives, we've seen some very interesting queries logged. Below you'll find the search I'm currently using:
 
-```
+{% highlight plaintext %}
 <SPL input for your iis logs>
 | regex cs_uri_query="(?i)(?:--|\;|\/\*|\@|\@\@version|char|alter|begin|cast|create|cursor|declare|delete|drop|end|exec|fetch|insert|kill|open|select|sys|table|update)"
 | stats count by host c_ip cs_uri_stem cs_uri_query
 | rex field=cs_uri_query "(?i)(?<suspect>--|\;|\/\*|\@|\@\@version|char|alter|begin|cast|create|cursor|declare|delete|drop|end|exec|fetch|insert|kill|open|select|sys|table|update)" max_match=0
-```
+{% endhighlight %}
 
 NOTE: The commenting I use below is not supported in SPL, however, it is quicker for me to write. Please please base your search on the SPL above.
 
